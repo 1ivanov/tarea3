@@ -1,0 +1,101 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+/************Grid*****************/
+.cajaUno{
+    border: 3px solid red;
+    padding: 10px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "caja1 caja1 caja1 caja1"
+                "caja2 caja2 caja3 caja4"
+                "caja5 caja6 caja6 caja6"
+                "caja7 caja7 caja7 caja8"
+                "caja7 caja7 caja7 caja9";
+}
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8, .caja9{
+    min-height: 50px;
+    border: 1px solid green;
+}
+.caja1{
+    grid-area: caja1;
+}
+.caja2{
+    grid-area: caja2;
+}
+.caja3{
+    grid-area: caja3;
+}
+.caja4{
+    grid-area: caja4;
+}
+.caja5{
+    grid-area: caja5;
+}
+.caja6{
+    grid-area: caja6;
+}
+.caja7{
+    grid-area: caja7;
+}
+.caja8{
+    grid-area: caja8;
+}
+.caja9{
+    grid-area: caja9;
+}
+/*********************flex****************/
+.cajaDos{
+    border: 3px solid red;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.cajaDos1, .cajaDos3{
+    border: 2px solid blue;
+    width: 10%;
+    min-height: 200px;
+    margin: 0 10px;
+}
+.cajaDos2 ,.cj1, .cj2, .cj3{
+    border: 2px solid blue;
+    margin: 0;
+}
+.cajaDos2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    min-height: 200px;
+}
+.cj1{
+    width: 100%; 
+    height: 35px;
+    margin: 0 20px;  
+}
+.cj2, .cj3{
+    width: 45%;
+    height: 35px;
+    margin: 5px;
+}
+/*************bootstrap*********************/
+.cajaTres{
+    width: ;
+    border: 3px solid red;
+    padding: 10px;
+    margin: 0 10px;
+}
+.form-group{
+    border: 2px solid yellow;
+    margin: 0 10px;
+}
